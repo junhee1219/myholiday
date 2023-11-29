@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+< lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,4 +29,35 @@
 <body>
   <div id="app"></div>
 </body>
+<script>
+  Kakao.init('2d677bf97c3745cd49e61c31d554a4ab');
+  Kakao.Share.createDefaultButton({
+      container: '#kakaotalk-sharing-btn',
+      objectType: 'feed',
+      content: {
+          title: '휴가언제쓰지?',
+          description: '#휴가 #국내여행 #맛집 #해외여행 #항공 #연차',
+          imageUrl:
+          'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+          link: {
+          mobileWebUrl: 'https://vuewit.com',
+          webUrl: 'https://vuewit.com',
+          },
+      },
+      social: {
+          likeCount: 286,
+          commentCount: 45,
+          sharedCount: 845,
+      },
+      buttons: [
+          {
+          title: '내 휴가계획도 확인하기',
+          link: {
+              mobileWebUrl: 'https://vuewit.com',
+              webUrl: 'https://vuewit.com',
+          },
+          },
+      ],
+  });
+  </script>
 </html>
